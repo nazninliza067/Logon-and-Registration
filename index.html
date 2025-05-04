@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Forms Section -->
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form-box login-box active">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Email">
+                <input type="password" id="login-password" placeholder="Password">
+                <div class="options">
+                    <label><input type="checkbox" id="remember-me"> Remember me</label>
+                    <a href="#" id="forgot-password-link">Forgot password?</a>
+                </div>
+                <button id="login-btn">Login</button>
+                <p>Don't have an account? <span class="switch-to-register">Register</span></p>
+            </div>
+
+            <!-- Register Form -->
+            <div class="form-box register-box">
+                <h2>Register</h2>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button id="register-btn">Register</button>
+                <p>Already have an account? <span class="switch-to-login">Login</span></p>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div class="form-box forgot-box">
+                <h2>Forgot Password</h2>
+                <input type="email" id="forgot-email" placeholder="Enter your email">
+                <button id="reset-btn">Reset Password</button>
+                <p>Remembered your password? <span class="switch-to-login">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
